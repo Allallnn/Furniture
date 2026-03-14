@@ -1,0 +1,146 @@
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color:#1D1D18;
+    line-height:1.6;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+section{
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+/* Buttons */
+
+button{
+    background:#C19A6B;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    margin-right:8px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+button:nth-of-type(2){
+    background:transparent;
+    border:1px solid #C19A6B;
+    color:#C19A6B;
+}
+
+
+/* Heri Section */
+
+section:first-of-type{
+    text-align:center;
+}
+
+section:first-of-type h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+section:first-of-type p{
+    max-width:500px;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+/* About Section */
+
+section:nth-of-type(2) h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+section:nth-of-type(2) p{
+    margin-bottom:20px;
+}
+
+
+/* Product */
+
+section:nth-of-type(3) h2{
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+section:nth-of-type(3) h5{
+    margin-top:15px;
+}
+
+section:nth-of-type(3) p{
+    color:#EB0101;
+    font-weight:600;
+}
+
+
+/* Product card feel */
+
+.col-lg-4 > div{
+    padding:15px;
+}
+
+
+/* Team Section */
+
+section:nth-of-type(4) h2{
+    margin-bottom:40px;
+}
+
+section:nth-of-type(4) h5{
+    margin-top:15px;
+}
+
+section:nth-of-type(4) p{
+    font-size:14px;
+}
+
+
+/* Footer */
+
+footer{
+    background:#1D1D18;
+    color:white;
+}
+
+footer h4{
+    color:#C19A6B;
+}
+
+footer ul{
+    list-style:none;
+    padding:0;
+}
+
+footer ul li{
+    margin-bottom:6px;
+}
+
+footer input{
+    padding:8px;
+    border:none;
+    width:70%;
+}
+
+footer button{
+    padding:8px 12px;
+}
+
