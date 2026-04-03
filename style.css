@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body{
     margin:0; 
     font-family: 'Montserrat', sans-serif;
@@ -12,6 +14,10 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing:1.5px;
 }
 
+p {
+      font-family: "Open Sans", sans-serif;
+}
+
 section{
     padding:80px 0;
 }
@@ -20,7 +26,7 @@ img{
     width:100%;
     height:auto;
     display:block;
-    border-radius:10px;
+
 }
 
 
@@ -328,6 +334,17 @@ width: 500px;
     letter-spacing:1px;
 }
 
+.team h5 {
+font-weight: 600;
+font-size: 24px;
+}
+
+
+.team p {
+font-weight: 400;
+font-size: 20px;
+}
+
 
 /* Footer */
 
@@ -406,8 +423,27 @@ footer .row > div {
     width: 90px;
 }
 
-.form-div button{
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
 
+
+.socials #img-1 {
+    width: 18px;
+    height: 14px;
+}
+
+.socials #img-2 {
+    width: 8px;
+    height: 15px;
+}
+
+.socials #img-3 {
+    width: 14px;
+    height: 14px;
 }
 
 
@@ -455,4 +491,9 @@ footer .row > div {
         padding:20px;
         border-radius:10px;
     }
+
+    .socials {
+    justify-content: center;
+
+}
 }
