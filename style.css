@@ -123,7 +123,7 @@ nav button {
 /* Hero */
 
 .Hero {
-    margin-top:80px; /* FIX overlap */
+margin-top: 40px;
 }
 
 section:first-of-type .container-fluid{
@@ -398,6 +398,15 @@ footer .row > div {
 }
 
 
+.form-div input{
+    width: 90px;
+}
+
+.form-div button{
+
+}
+
+
 /* Mobile */
 
 @media (max-width:768px){
@@ -422,7 +431,7 @@ footer .row > div {
     section:first-of-type .container-fluid,
     section:first-of-type .container {
         height:auto;
-        min-height:100vh;
+        min-height:10vh;
         padding:80px 20px;
     }
 
