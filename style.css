@@ -4,6 +4,7 @@ body{
     color:#1D1D18;
     line-height:1.6;
     background:#ffffff;
+    overflow-x:hidden; /* FIX */
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -68,7 +69,6 @@ header{
     width:100%;
     z-index:10;
     padding:25px 60px;
-
 }
 
 .navbar{
@@ -119,10 +119,11 @@ nav button {
     margin-right: 1rem;
 }
 
+
 /* Hero */
 
 .Hero {
-    margin-top: 2rem;
+    margin-top:80px; /* FIX overlap */
 }
 
 section:first-of-type .container-fluid{
@@ -178,9 +179,11 @@ section:first-of-type p{
 }
 
 .hero p {
-    font-size: 16px;
-    width: 550px;
+    font-size:16px;
+    width:100%; /* FIX */
+    max-width:90%; /* FIX */
 }
+
 
 /* About */
 
@@ -203,7 +206,7 @@ section h2{
 section p{
     font-size:16px;
     margin-bottom:25px;
-    max-width:400px;
+    max-width:100%; /* FIX */
     color:#1D1D18;
 }
 
@@ -213,6 +216,7 @@ section p{
     font-weight: 400;
 }
 
+
 /* Products */
 
 .container > .text-center h2{
@@ -220,13 +224,11 @@ section p{
     margin-bottom:60px;
 }
 
-
 .col-lg-4 > div{
     display:flex;
     flex-direction:column;
     gap:6px; 
 }
-
 
 .col-lg-4 img{
     border-radius:10px;
@@ -247,13 +249,11 @@ section p{
     color:#1D1D18;
 }
 
-
 .prod-div {
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
-
 
 .col-lg-4 button{
     margin-top:8px;
@@ -261,7 +261,6 @@ section p{
     padding:6px 12px;
     width:fit-content;
 }
-
 
 .Products button img{
     width:12px;
@@ -286,22 +285,24 @@ section p{
 }
 
 .prod-btn {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    justify-content:space-between;
+    gap:10px; /* FIX */
 }
 
 .prod-btn button {
-    width: 190px;
-    display: flex;
-justify-content: center;
-font-size: 18px;
+    width:190px;
+    display:flex;
+    justify-content:center;
+    font-size:18px;
 }
 
 .prod-btn button img {
-    width: 12px;
-    height: 12px;
-    margin-top: 1rem;
+    width:12px;
+    height:12px;
+    margin-top:1rem;
 }
+
 
 /* Team */
 
@@ -385,18 +386,19 @@ footer button img{
     height:14px;
 }
 
-
 footer .row {
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
     gap:2rem;
 }
 
 footer .row > div {
-    flex: 1 1 200px; 
-    min-width: 200px; 
+    flex:1 1 200px; 
+    min-width:200px; 
 }
 
+
+/* Mobile */
 
 @media (max-width:768px){
 
@@ -416,4 +418,28 @@ footer .row > div {
         padding:30px;
     }
 
+
+    section:first-of-type .container-fluid,
+    section:first-of-type .container {
+        height:auto;
+        min-height:100vh;
+        padding:80px 20px;
+    }
+
+
+    .prod-btn {
+        flex-direction:column;
+    }
+
+    .prod-btn button {
+        width:100%;
+        font-size:14px;
+    }
+
+
+    .navbar-collapse {
+        background:white;
+        padding:20px;
+        border-radius:10px;
+    }
 }
