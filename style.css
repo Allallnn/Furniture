@@ -496,4 +496,12 @@ footer .row > div {
     justify-content: center;
 
 }
+
+.About p {
+    width: 325px;
+}
+
+.About button {
+    margin-bottom: 1rem;
+}
 }
