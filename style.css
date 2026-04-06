@@ -6,7 +6,7 @@ body{
     color:#1D1D18;
     line-height:1.6;
     background:#ffffff;
-    overflow-x:hidden; /* FIX */
+    overflow-x:hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -209,7 +209,7 @@ section h2{
     margin-bottom:20px;
 }
 
-section p{
+.About section p{
     font-size:16px;
     margin-bottom:25px;
 width: 500px;
@@ -222,9 +222,6 @@ width: 500px;
     font-weight: 400;
 }
 
-.About {
-
-}
 
 
 /* Products */
@@ -503,5 +500,41 @@ footer .row > div {
 
 .About button {
     margin-bottom: 1rem;
+}
+
+/* About */
+
+.About h2{
+    width:21rem;
+    line-height:1.5;
+    font-size:30px;
+}
+
+section .row.align-items-center{
+    /* padding:60px; */
+    border-radius:12px;
+}
+
+section h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.About section p{
+    font-size:16px;
+    margin-bottom:25px;
+width: 500px;
+    color:#1D1D18;
+}
+
+.About h3 {
+    color: #C19A6B;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.About {
+    border: solid 1px red;
+    padding-left: 0;
 }
 }
